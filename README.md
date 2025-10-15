@@ -190,14 +190,22 @@ SQLite is configured by default. To switch to PostgreSQL:
 make switch-db-mode
 ```
 
-#### 4. Custom Environment Variables（Optional）
+#### 4. Initialize SQLite
+
+Run the default SQLite setup to generate the Prisma client and apply migrations:
+
+```sh
+make sqlite.mode
+```
+
+#### 5. Custom Environment Variables（Optional）
 
 ```sh
 cd apps/nextjs-app
 cp .env.development .env.development.local
 ```
 
-#### 5. Run Dev Server
+#### 6. Run Dev Server
 
 The backend automatically starts the Next.js frontend. File changes auto-reload.
 
